@@ -1,0 +1,97 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    text-align: center;
+    max-width: 600px;
+    margin: 10px auto;
+}
+
+/* Navigation Bar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.navbar ul {
+    list-style: none;
+    text-align: center;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+/* Hero Section */
+#home {
+    height: 100vh;
+    background: url('minpic.jpg') no-repeat center center/cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#home h1 {
+    font-size: 4em;
+}
+
+#home p {
+    font-size: 1.5em;
+}
+
+/* Content Sections */
+section {
+    padding: 60px 0;
+}
+
+/* Changing the background color of the navbar when scrolling */
+.scrolled {
+    background-color: #000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #home h1 {
+        font-size: 3em;
+    }
+
+    #home p {
+        font-size: 1.2em;
+    }
+}
